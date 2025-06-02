@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fractor</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/Asset 5.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/Asset 5.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/Asset 5.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#072149",
+              secondary: "#317cff",
+              accent: "#22b3ff",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="text-white font-sans">
+    <header class="bg-white py-6 shadow-sm fixed top-0 left-0 right-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="flex-shrink-0">
+          <img src="./assets/Asset 3.png" alt="fabinvest" class="h-10 w-auto" />
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+          <!-- <a href="#" class="group transition duration-300">
+            Link
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+            </a> -->
+          <a
+            href="#"
+            class="text-lg text-primary hover:text-secondary font-normal group transition duration-300"
+            >Home
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/projects/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Projects
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/webinars/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Webinars
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/faqs/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Faqs
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/about-us/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >About Us
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/contact-us/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Contact Us
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+        </nav>
+
+        <!-- Mobile Menu Toggle (optional placeholder for real implementation) -->
+        <div class="md:hidden">
+          <button class="text-gray-700 focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center bg-fixed bg-black"
+      style="background-image: url('./assets/background.png')"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+      <div class="relative z-10 flex items-center justify-center h-full px-4">
+        <div
+          class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-center space-y-12 md:space-y-0"
+        >
+          <!-- Left Empty Column -->
+          <!-- <div class="w-full md:w-1/3 hidden md:block"> -->
+          <!-- Leave empty or insert a decorative element -->
+          <!-- </div> -->
+
+          <!-- Main Text -->
+          <div class="w-full md:w-[70%] text-center">
+            <h1 class="text-4xl md:text-7xl font-bold leading-tight">
+              Micro Invest In <br />
+              Real Estate Projects
+            </h1>
+
+            <div
+              class="mt-4 text-secondary font-bold text-2xl md:text-6xl autotyping"
+            >
+              <span class="typing_text"></span>
+              <!-- <span class="typed-cursor">|️</span> -->
+            </div>
+
+            <p class="mt-4 text-lg text-gray-300">
+              Redefining Real Estate Investments with Fractional Ownership
+            </p>
+
+            <a
+              href="https://fabinvest.in/sark-t2"
+              class="inline-block mt-6 px-6 py-3 text-white bg-secondary hover:bg-accent transition rounded shadow-md"
+            >
+              View Live Project
+            </a>
+          </div>
+
+          <!-- Icon Rocket (Right Decorative Column) -->
+          <!-- <div class="w-full md:w-1/3 flex justify-end items-start relative">
+            <div
+              class="hidden md:block text-secondary text-4xl animate-bounce absolute top-0 right-0"
+            >
+              <i class="fas fa-rocket"></i>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Headings -->
+        <div class="text-center mb-10">
+          <h6 class="text-lg font-bold text-secondary uppercase">
+            100% Asset BACKED
+          </h6>
+          <h2 class="text-3xl md:text-4xl font-bold mt-2 text-black">
+            Investment Partnership with Builders
+          </h2>
+          <p class="text-gray-600 mt-4 max-w-xl mx-auto">
+            Invest your money in Real Estate Projects and unlock the potential
+            to gain Superlative Returns
+          </p>
+        </div>
+
+        <!-- Feature Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="text-center space-y-4 bg-primary rounded-lg p-4 py-20 hover:shadow-lg transition-all duration-300"
+          >
+            <img
+              src="./assets/icons/Icon4.png"
+              alt="1.5x Asset"
+              class="mx-auto w-16 h-16"
+            />
+            <h4 class="text-xl font-bold">1.5x Asset</h4>
+            <p class="text-gray-300">
+              All investments are backed with property worth 1.8x your
+              Investment
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="text-center space-y-4 rounded-lg p-4 py-20 border border-accent hover:border-secondary hover:shadow-lg transition-all duration-300"
+          >
+            <img
+              src="./assets/icons/Icon1.png"
+              alt="20% ROI"
+              class="mx-auto w-16 h-16"
+            />
+            <h4 class="text-xl text-primary font-bold">~20% ROI</h4>
+            <p class="text-gray-600">
+              Grow your money securely with our asset backed investment options
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="text-center space-y-4 rounded-lg p-4 py-20 border border-accent hover:border-secondary hover:shadow-lg transition-all duration-300"
+          >
+            <img
+              src="./assets/icons/Icon3.png"
+              alt="Short Term"
+              class="mx-auto w-16 h-16"
+            />
+            <h4 class="text-xl text-primary font-bold">Short Term</h4>
+            <p class="text-gray-600">
+              Invest for 2-3 years and exit with long term capital gains
+              benefits
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-[#072149] rounded-3xl mx-10 max-w-7xl mx-auto">
+      <div class="px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 text-center text-white">
+          <!-- AUM -->
+          <div class="md:border-r-2 border-dashed border-accent py-10">
+            <div class="text-lg font-medium mb-2">AUM</div>
+            <div class="text-3xl md:text-4xl font-extrabold">
+              70<span class="text-white">Cr+</span>
+            </div>
+          </div>
+
+          <!-- Investors -->
+          <div class="md:border-r-2 border-dashed border-accent py-10">
+            <div class="text-lg font-medium mb-2">Investors</div>
+            <div class="text-3xl md:text-4xl font-extrabold">
+              350<span class="text-white">+</span>
+            </div>
+          </div>
+
+          <!-- Returns Disbursed -->
+          <div class="md:border-r-2 border-dashed border-accent py-10">
+            <div class="text-lg font-medium mb-2">Returns Disbursed</div>
+            <div class="text-3xl md:text-4xl font-extrabold">
+              3.45<span class="text-white">Cr+</span>
+            </div>
+          </div>
+
+          <!-- Community -->
+          <div class="py-10">
+            <div class="text-lg font-medium mb-2">Community</div>
+            <div class="text-3xl md:text-4xl font-extrabold">
+              11<span class="text-white">K+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-gradient-to-b from-[#FAF9F7] to-accent">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <!-- Section Headings -->
+        <h6 class="text-lg font-bold text-secondary uppercase">
+          40–50% Discounted Acquisition
+        </h6>
+        <h2 class="text-black text-3xl md:text-4xl font-bold mt-2">
+          Acquire Investor Share in Top Projects
+        </h2>
+
+        <!-- Step Flow Grid -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+          <!-- Step 01 -->
+          <div
+            class="relative bg-white shadow-lg rounded-xl px-6 py-8 text-center"
+          >
+            <div class="text-3xl text-secondary mb-4">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="text-xl text-primary font-semibold mb-2">
+              Join Investor <br />
+              Pool
+            </h3>
+            <p class="text-gray-600 text-sm">
+              A group of investors join to form a big investment and invest in
+              the project.
+            </p>
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full"
+            >
+              Step 01
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div
+            class="relative bg-white shadow-lg rounded-xl px-6 py-8 text-center"
+          >
+            <div class="text-3xl text-secondary mb-4">
+              <i class="far fa-file-pdf"></i>
+            </div>
+            <h3 class="text-xl text-primary font-semibold mb-2">
+              Acquire <br />
+              Investor Share
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Flats/Villas in the project are acquired as investor share at ~40%
+              discounted price over market.
+            </p>
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full"
+            >
+              Step 02
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div
+            class="relative bg-white shadow-lg rounded-xl px-6 py-8 text-center"
+          >
+            <div class="text-3xl text-secondary mb-4">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <h3 class="text-xl text-primary font-semibold mb-2">
+              Fractional <br />
+              Ownership
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Your investment will be secured by fractional ownership in
+              property.
+            </p>
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full"
+            >
+              Step 03
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div
+            class="relative bg-white shadow-lg rounded-xl px-6 py-8 text-center"
+          >
+            <div class="text-3xl text-secondary mb-4">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h3 class="text-xl text-primary font-semibold mb-2">
+              Returns <br />
+              Distribution
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Returns are credited directly into your bank account after project
+              exit.
+            </p>
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full"
+            >
+              Step 04
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-16 bg-[#FAF9F7] overflow-hidden">
+      <div class="container max-w-7xl mx-auto px-4">
+        <div class="text-left mb-10">
+          <h6
+            class="text-sm text-accent font-semibold uppercase tracking-widest mb-2"
+          >
+            Hear From
+          </h6>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+            Our Investors
+          </h2>
+        </div>
+
+        <!-- Carousel -->
+        <div class="relative ">
+          <div class="swiper-container" id="investorCarousel">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide p-2">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="aspect-video relative">
+                    <a
+                      href="https://www.youtube.com/embed/7fJGCWMeIrU?autoplay=1&rel=0&controls=0"
+                      class="block w-full h-full"
+                    >
+                      <img
+                        src="https://fabinvest.in/wp-content/uploads/2025/03/Siddharth-Cover-768x425.jpg"
+                        alt="Investor Testimonial"
+                        class="w-full h-full object-cover"
+                      />
+                      <div
+                        class="absolute inset-0 bg-black/30 flex items-center justify-center"
+                      >
+                        <div class="text-white text-4xl">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                    <!-- <div class="p-4">
+                      <h3 class="text-lg font-semibold text-gray-800">
+                        Rama Krishna Potluri
+                      </h3>
+                      <p class="text-sm text-gray-600">Consulting</p>
+                    </div> -->
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide p-2">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="aspect-video relative">
+                    <a
+                      href="https://www.youtube.com/embed/7fJGCWMeIrU?autoplay=1&rel=0&controls=0"
+                      class="block w-full h-full"
+                    >
+                      <img
+                        src="https://fabinvest.in/wp-content/uploads/2025/03/Siddharth-Cover-768x425.jpg"
+                        alt="Investor Testimonial"
+                        class="w-full h-full object-cover"
+                      />
+                      <div
+                        class="absolute inset-0 bg-black/30 flex items-center justify-center"
+                      >
+                        <div class="text-white text-4xl">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">
+                      Dr Kamal Olleri
+                    </h3>
+                    <p class="text-sm text-gray-600">
+                      World Health Organisation
+                    </p>
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide p-2">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="aspect-video relative">
+                    <a
+                      href="https://www.youtube.com/embed/7fJGCWMeIrU?autoplay=1&rel=0&controls=0"
+                      class="block w-full h-full"
+                    >
+                      <img
+                        src="https://fabinvest.in/wp-content/uploads/2025/03/Siddharth-Cover-768x425.jpg"
+                        alt="Investor Testimonial"
+                        class="w-full h-full object-cover"
+                      />
+                      <div
+                        class="absolute inset-0 bg-black/30 flex items-center justify-center"
+                      >
+                        <div class="text-white text-4xl">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">
+                      Santhosh
+                    </h3>
+                    <p class="text-sm text-gray-600">Senior Manager, HAL</p>
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="swiper-slide p-2">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="aspect-video relative">
+                    <a
+                      href="https://www.youtube.com/embed/7fJGCWMeIrU?autoplay=1&rel=0&controls=0"
+                      class="block w-full h-full"
+                    >
+                      <img
+                        src="https://fabinvest.in/wp-content/uploads/2025/03/Siddharth-Cover-768x425.jpg"
+                        alt="Investor Testimonial"
+                        class="w-full h-full object-cover"
+                      />
+                      <div
+                        class="absolute inset-0 bg-black/30 flex items-center justify-center"
+                      >
+                        <div class="text-white text-4xl">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">
+                      Santhosh
+                    </h3>
+                    <p class="text-sm text-gray-600">Senior Manager, HAL</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <div
+              class="absolute top-1/2 -left-12 transform -translate-y-1/2 z-10"
+            >
+              <button
+                class="swiper-button-prev w-10 h-10 flex items-center justify-center text-primary hover:text-secondary"
+              >
+                <!-- <i class="fas fa-chevron-left"></i> -->
+              </button>
+            </div>
+            <div
+              class="absolute top-1/2 -right-12 transform -translate-y-1/2 z-10"
+            >
+              <button
+                class="swiper-button-next w-10 h-10 flex items-center justify-center text-primary hover:text-secondary"
+              >
+                <!-- <i class="fas fa-chevron-right"></i> -->
+              </button>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination mt-6"></div>
+          </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-10">
+          <a
+            href="https://fabinvest.in/our-investors/"
+            class="inline-block px-6 py-2 text-sm font-medium text-white bg-accent hover:bg-secondary transition rounded-full shadow"
+          >
+            View All
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f7fafa] py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-left mb-12">
+          <h6
+            class="text-sm font-semibold text-gray-500 uppercase tracking-widest"
+          >
+            Stringent Project Selection
+          </h6>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+            Zero Risk Approach
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left Column -->
+          <div class="space-y-8">
+            <div class="flex gap-4">
+              <img
+                src="./assets/icons/Icon5.png"
+                alt="Top Builders"
+                class="w-16 h-16 object-contain"
+              />
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Top Builders
+                </h4>
+                <p class="text-gray-600">
+                  We only invest in top builders with good experience and proven
+                  track record.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <img
+                src="./assets/icons/Icon6.png"
+                alt="Late Stage Projects"
+                class="w-16 h-16 object-contain"
+              />
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Late Stage Projects
+                </h4>
+                <p class="text-gray-600">
+                  Advanced projects where more than 50% structural work is
+                  complete.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="space-y-8">
+            <div class="flex gap-4">
+              <img
+                src="./assets/icons/like-shapes.png"
+                alt="150% Asset Backing"
+                class="w-16 h-16 object-contain"
+              />
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  150% Asset Backing
+                </h4>
+                <p class="text-gray-600">
+                  We acquire the asset at a discounted price, making our
+                  investments risk-free.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <img
+                src="./assets/icons/shield-1-300x291.png"
+                alt="Prime Gated Communities"
+                class="w-16 h-16 object-contain"
+              />
+              <div>
+                <h4 class="text-xl font-semibold text-gray-800">
+                  Prime Gated Communities
+                </h4>
+                <p class="text-gray-600">
+                  We invest only in RERA-approved gated community projects in
+                  prime locations, worth over ₹200 Cr.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <h6 class="text-sm uppercase tracking-wider text-gray-500">
+            Ongoing
+          </h6>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Projects</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+          <!-- Project Card -->
+          <div>
+            <div class="aspect-video mb-4">
+              <iframe
+                class="w-full h-full rounded-md"
+                src="https://www.youtube.com/embed/yO_qAa3jmVs?rel=0"
+                title="Project Video"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+              Prime North Meadows
+            </h3>
+            <p class="flex items-center gap-2 text-gray-600 mb-6">
+              <i class="fas fa-location-arrow text-yellow-500"></i> Mokila,
+              Hyderabad
+            </p>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-4 text-center mb-6">
+              <div>
+                <h5 class="text-lg font-bold text-gray-800">30 Lakhs</h5>
+                <p class="text-sm text-gray-500">Min Investment</p>
+              </div>
+              <div>
+                <h5 class="text-lg font-bold text-gray-800">18% ROI</h5>
+                <p class="text-sm text-gray-500">in 12 Months</p>
+              </div>
+              <div>
+                <h5 class="text-lg font-bold text-gray-800">Advanced</h5>
+                <p class="text-sm text-gray-500">Project Stage</p>
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="mb-6">
+              <span class="block text-sm font-semibold text-gray-700 mb-1"
+                >₹ 4.5 Crores</span
+              >
+              <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden">
+                <div
+                  class="bg-green-500 h-full w-full flex items-center justify-center text-white text-xs font-medium"
+                >
+                  100% Funded
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-left">
+              <a
+                href="https://fabinvest.in/sark-t2"
+                class="inline-block bg-accent hover:bg-secondary text-white px-6 py-2 rounded-full font-medium transition"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Right column (for future content / balance layout) -->
+          <div class="hidden md:block"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FAF9F7] py-16">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h6
+          class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-2"
+        >
+          Our Portfolio
+        </h6>
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-800 animate-fade-in"
+        >
+          Previous Projects
+        </h2>
+      </div>
+    </section>
+
+    <section class="bg-[#FAF9F7] py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- SVB Elegancia -->
+          <div>
+            <img
+              src="https://fabinvest.in/wp-content/uploads/2024/04/SVB-Project-Cover-Image-768x429.jpg"
+              alt="SVB Elegancia"
+              class="w-full h-auto rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              SVB Elegancia
+            </h3>
+            <p class="flex items-center gap-2 text-gray-600 mb-4">
+              <i class="fas fa-location-arrow text-yellow-500"></i> Kompally,
+              Hyderabad
+            </p>
+            <div class="mb-2 font-semibold text-gray-700">₹ 15 Crores</div>
+            <div
+              class="w-full bg-gray-200 h-4 rounded-full overflow-hidden mb-2"
+            >
+              <div
+                class="bg-green-500 h-full w-full text-white text-xs font-medium flex items-center justify-center"
+              >
+                Fully Funded
+              </div>
+            </div>
+            <p class="text-right text-sm text-gray-500">100%</p>
+          </div>
+
+          <!-- Sark Villas -->
+          <div>
+            <img
+              src="https://fabinvest.in/wp-content/uploads/2024/03/Sark-Cover-e1710321696474-768x421.jpg"
+              alt="Sark Villas"
+              class="w-full h-auto rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Sark Villas
+            </h3>
+            <p class="flex items-center gap-2 text-gray-600 mb-4">
+              <i class="fas fa-location-arrow text-yellow-500"></i> Mokila,
+              Hyderabad
+            </p>
+            <div class="mb-2 font-semibold text-gray-700">₹ 16 Crores</div>
+            <div
+              class="w-full bg-gray-200 h-4 rounded-full overflow-hidden mb-2"
+            >
+              <div
+                class="bg-green-500 h-full w-full text-white text-xs font-medium flex items-center justify-center"
+              >
+                Fully Funded
+              </div>
+            </div>
+            <p class="text-right text-sm text-gray-500">100%</p>
+          </div>
+
+          <!-- Soulace Villas -->
+          <div>
+            <img
+              src="https://fabinvest.in/wp-content/uploads/2024/09/Soulace-Cover-Image--768x427.jpg"
+              alt="Soulace Villas"
+              class="w-full h-auto rounded-md mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Soulace Villas
+            </h3>
+            <p class="flex items-center gap-2 text-gray-600 mb-4">
+              <i class="fas fa-location-arrow text-yellow-500"></i> Sarjapur
+              Road, Bangalore
+            </p>
+            <div class="mb-2 font-semibold text-gray-700">₹ 12 Crores</div>
+            <div
+              class="w-full bg-gray-200 h-4 rounded-full overflow-hidden mb-2"
+            >
+              <div
+                class="bg-green-500 h-full w-full text-white text-xs font-medium flex items-center justify-center"
+              >
+                Fully Funded
+              </div>
+            </div>
+            <p class="text-right text-sm text-gray-500">100%</p>
+          </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="mt-10 text-center">
+          <a
+            href="https://fabinvest.in/projects/"
+            class="inline-block bg-accent hover:bg-secondary text-white px-6 py-2 rounded-full font-medium transition"
+            >View All Projects</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-24">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h6
+          class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-2"
+        >
+          Our Headlines
+        </h6>
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 animate-fade-in"
+        >
+          In The News
+        </h2>
+
+        <!-- News Images Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <img
+            src="https://fabinvest.in/wp-content/uploads/2024/11/TOI-Article1-768x471.jpg"
+            alt="TOI Article"
+            class="rounded-md shadow-md w-full h-auto"
+          />
+          <img
+            src="https://fabinvest.in/wp-content/uploads/2025/04/ANI-1-768x471.jpg"
+            alt="ANI News"
+            class="rounded-md shadow-md w-full h-auto"
+          />
+          <img
+            src="https://fabinvest.in/wp-content/uploads/2025/04/Jio-1-768x471.jpg"
+            alt="Jio Article"
+            class="rounded-md shadow-md w-full h-auto"
+          />
+        </div>
+
+        <!-- Carousel Logos -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="w-36 h-24 bg-center bg-contain bg-no-repeat"
+                style="
+                  background-image: url('https://fabinvest.in/wp-content/uploads/2023/12/Business-Standard.png');
+                "
+              ></div>
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="w-36 h-24 bg-center bg-contain bg-no-repeat"
+                style="
+                  background-image: url('https://fabinvest.in/wp-content/uploads/2024/11/TOI-Logo-300x300.png');
+                "
+              ></div>
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="w-36 h-24 bg-center bg-contain bg-no-repeat"
+                style="
+                  background-image: url('https://fabinvest.in/wp-content/uploads/2023/12/ANI.png');
+                "
+              ></div>
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="w-36 h-24 bg-center bg-contain bg-no-repeat"
+                style="
+                  background-image: url('https://fabinvest.in/wp-content/uploads/2023/12/PRINT-1.png');
+                "
+              ></div>
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="w-36 h-24 bg-center bg-contain bg-no-repeat"
+                style="
+                  background-image: url('https://fabinvest.in/wp-content/uploads/2023/12/mediaimgcf2d2852-c858-452f-d3cf-0711b93b6a73.png');
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FAF9F7] py-20">
+      <div class="max-w-7xl mx-auto px-4 bg-black rounded-xl py-8 lg:px-16">
+        <div
+          class="flex flex-col-reverse md:flex-row items-center justify-between gap-10"
+        >
+          <!-- Left Side Text -->
+          <div class="w-full md:w-1/2">
+            <h2 class="text-3xl font-bold text-white mb-4 animate-fade-in">
+              Get Notifications
+            </h2>
+            <p class="text-white mb-6">
+              Join our investor community for exclusive updates on new launches
+              and investment opportunities.
+            </p>
+            <a
+              href="https://chat.whatsapp.com/HP7dDuR2NLSKz9R83ccbEp"
+              target="_blank"
+              rel="noopener"
+              class="inline-block bg-accent hover:bg-secondary text-white font-medium px-6 py-3 rounded shadow-md transition transform hover:-translate-y-1"
+            >
+              Join Community
+            </a>
+          </div>
+
+          <!-- Right Side Image -->
+          <div class="">
+            <img
+              src="./assets/Asset 5.png"
+              alt="Fab Invest Logo"
+              class="max-w-xs md:max-w-sm w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#111111] text-white py-20">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10"
+      >
+        <!-- Logo & Contact -->
+        <div>
+          <img
+            src="./assets/Asset 4.png"
+            alt="FabInvest Logo"
+            class="w-44 mb-6"
+          />
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2">
+              <i class="fas fa-phone-alt  text-accent"></i>
+              <a href="tel:+919032039541" class="hover:underline"
+                >+91 90320 39541</a
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fab fa-whatsapp  text-accent"></i>
+              <a href="https://wa.me/919032039541" class="hover:underline"
+                >+91 90320 39541</a
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-envelope  text-accent"></i>
+              <a href="mailto:support@fabinvest.in" class="hover:underline"
+                >support@fabinvest.in</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h5 class="font-semibold text-lg mb-4">Quick Links</h5>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="https://fabinvest.in/" class="hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="https://fabinvest.in/projects/" class="hover:underline"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="http://fabinvest.in/faqs/" class="hover:underline"
+                >Faqs</a
+              >
+            </li>
+            <li>
+              <a href="http://fabinvest.in/about-us/" class="hover:underline"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="http://fabinvest.in/contact-us/" class="hover:underline"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://fabinvest.in/our-investors/"
+                class="hover:underline"
+                >Our Investors</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h5 class="font-semibold text-lg mb-4">Legal</h5>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="http://fabinvest.in/privacy-policy/"
+                class="hover:underline"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://fabinvest.in/terms-of-use/"
+                class="hover:underline"
+                >Terms of Use</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Offices & Socials -->
+        <div>
+          <h5 class="font-semibold text-lg mb-4">Hyderabad Office</h5>
+          <p class="text-sm mb-4">
+            1st Floor, DSR Tranquil, Ayyappa Society Main Rd, Mega Hills,
+            Madhapur, Hyderabad, Telangana 500081
+          </p>
+          <h5 class="font-semibold text-lg mb-2">Bangalore Office</h5>
+          <p class="text-sm mb-4">
+            3rd Floor, WeWork, Salarpuria Symbiosis, Bannerghatta Rd, Arekere,
+            Bengaluru, Karnataka 560101
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://www.facebook.com/fabinvest.in/"
+              target="_blank"
+              class="hover:text-yellow-500"
+              ><i class="fab fa-facebook text-xl text-accent"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fabinvest.in/"
+              target="_blank"
+              class="hover:text-yellow-500"
+              ><i class="fab fa-instagram text-xl text-accent"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/fabinvest-in"
+              target="_blank"
+              class="hover:text-yellow-500"
+              ><i class="fab fa-linkedin text-xl text-accent"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="bg-[#111111] text-white border-t border-white/10 py-4">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-sm">
+          © 2025 <span class="font-semibold">Fab Invest™</span>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/ba76523eba.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SwiperJS CDN required -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Typed.js Script -->
+    <script>
+      var typed = new Typed(".typing_text", {
+        strings: ["~20% ROI", "1.5x Asset"],
+        typeSpeed: 50,
+        backSpeed: 40,
+        loop: true,
+        cursorChar: "|️",
+      });
+
+      const swiper = new Swiper("#investorCarousel", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const swiper2 = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 2,
+        spaceBetween: 20,
+        breakpoints: {
+          640: { slidesPerView: 3 },
+          768: { slidesPerView: 4 },
+          1024: { slidesPerView: 5 },
+        },
+      });
+    </script>
+
+    <!-- Font Awesome for Rocket Icon -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
