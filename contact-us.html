@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fractor</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/Asset 5.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/Asset 5.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/Asset 5.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#072149",
+              secondary: "#317cff",
+              accent: "#22b3ff",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="bg-white py-6 shadow-sm fixed top-0 left-0 right-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="flex-shrink-0">
+          <img src="./assets/Asset 3.png" alt="fabinvest" class="h-10 w-auto" />
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+          <!-- <a href="#" class="group transition duration-300">
+              Link
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </a> -->
+          <a
+            href="#"
+            class="text-lg text-primary hover:text-secondary font-normal group transition duration-300"
+            >Home
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/projects/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Projects
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/webinars/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Webinars
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/faqs/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Faqs
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/about-us/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >About Us
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="https://fabinvest.in/contact-us/"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Contact Us
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+        </nav>
+
+        <!-- Mobile Menu Toggle (optional placeholder for real implementation) -->
+        <div class="md:hidden">
+          <button class="text-gray-700 focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-[#FAF9F7] py-20">
+      <div class="max-w-7xl mx-auto px-4 bg-black rounded-xl py-8 lg:px-16">
+        <div
+          class="flex flex-col-reverse md:flex-row items-center justify-between gap-10"
+        >
+          <!-- Left Side Text -->
+          <div class="w-full md:w-1/2">
+            <h2 class="text-3xl font-bold text-white mb-4 animate-fade-in">
+              Get Notifications
+            </h2>
+            <p class="text-white mb-6">
+              Join our investor community for exclusive updates on new launches
+              and investment opportunities.
+            </p>
+            <a
+              href="https://chat.whatsapp.com/HP7dDuR2NLSKz9R83ccbEp"
+              target="_blank"
+              rel="noopener"
+              class="inline-block bg-accent hover:bg-secondary text-white font-medium px-6 py-3 rounded shadow-md transition transform hover:-translate-y-1"
+            >
+              Join Community
+            </a>
+          </div>
+
+          <!-- Right Side Image -->
+          <div class="">
+            <img
+              src="./assets/Asset 5.png"
+              alt="Fab Invest Logo"
+              class="max-w-xs md:max-w-sm w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#111111] text-white py-20">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10"
+      >
+        <!-- Logo & Contact -->
+        <div>
+          <img
+            src="./assets/Asset 4.png"
+            alt="FabInvest Logo"
+            class="w-44 mb-6"
+          />
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2">
+              <i class="fas fa-phone-alt text-accent"></i>
+              <a href="tel:+919032039541" class="hover:underline"
+                >+91 90320 39541</a
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fab fa-whatsapp text-accent"></i>
+              <a href="https://wa.me/919032039541" class="hover:underline"
+                >+91 90320 39541</a
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-envelope text-accent"></i>
+              <a href="mailto:support@fabinvest.in" class="hover:underline"
+                >support@fabinvest.in</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h5 class="font-semibold text-lg mb-4">Quick Links</h5>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="https://fabinvest.in/" class="hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="https://fabinvest.in/projects/" class="hover:underline"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="http://fabinvest.in/faqs/" class="hover:underline"
+                >Faqs</a
+              >
+            </li>
+            <li>
+              <a href="http://fabinvest.in/about-us/" class="hover:underline"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="http://fabinvest.in/contact-us/" class="hover:underline"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://fabinvest.in/our-investors/"
+                class="hover:underline"
+                >Our Investors</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h5 class="font-semibold text-lg mb-4">Legal</h5>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="http://fabinvest.in/privacy-policy/"
+                class="hover:underline"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://fabinvest.in/terms-of-use/"
+                class="hover:underline"
+                >Terms of Use</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Offices & Socials -->
+        <div>
+          <h5 class="font-semibold text-lg mb-4">Hyderabad Office</h5>
+          <p class="text-sm mb-4">
+            1st Floor, DSR Tranquil, Ayyappa Society Main Rd, Mega Hills,
+            Madhapur, Hyderabad, Telangana 500081
+          </p>
+          <h5 class="font-semibold text-lg mb-2">Bangalore Office</h5>
+          <p class="text-sm mb-4">
+            3rd Floor, WeWork, Salarpuria Symbiosis, Bannerghatta Rd, Arekere,
+            Bengaluru, Karnataka 560101
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://www.facebook.com/fabinvest.in/"
+              target="_blank"
+              class="hover:text-yellow-500"
+              ><i class="fab fa-facebook text-xl text-accent"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fabinvest.in/"
+              target="_blank"
+              class="hover:text-yellow-500"
+              ><i class="fab fa-instagram text-xl text-accent"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/fabinvest-in"
+              target="_blank"
+              class="hover:text-yellow-500"
+              ><i class="fab fa-linkedin text-xl text-accent"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="bg-[#111111] text-white border-t border-white/10 py-4">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-sm">
+          © 2025 <span class="font-semibold">Fab Invest™</span>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
