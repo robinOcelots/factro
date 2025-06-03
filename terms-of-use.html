@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fractor</title>
 
     <link
@@ -21,7 +22,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 
-
     <script>
       tailwind.config = {
         theme: {
@@ -36,7 +36,7 @@
       };
     </script>
   </head>
-  <body class="font-sans ">
+  <body class="pt-32">
     <header class="bg-white py-6 shadow-sm fixed top-0 left-0 right-0 z-50">
       <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <!-- Logo -->
@@ -47,9 +47,9 @@
         <!-- Navigation Menu -->
         <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
           <!-- <a href="#" class="group transition duration-300">
-              Link
-              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
-              </a> -->
+                  Link
+                  <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+                  </a> -->
           <a
             href="#"
             class="text-lg text-primary hover:text-secondary font-normal group transition duration-300"
@@ -122,149 +122,31 @@
       </div>
     </header>
 
-
-    <section class="bg-[#FAF9F7] py-20 pt-32">
-      <div
-        class="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 animate-fadeIn"
-      >
-        <!-- Left Column -->
-        <div class="space-y-6">
-          <h6 class="text-lg uppercase text-accent font-semibold">Contact Details</h6>
-          <h2 class="text-3xl font-semibold text-gray-800">Get In Touch</h2>
-          <p class="text-gray-600">
-            Please reach out to our team if you have any additional queries or
-            need any further assistance.
-          </p>
-
-          <!-- Email -->
-          <div class="flex items-start gap-4">
-            <a
-              href="mailto:support@fabinvest.in"
-              class="text-white text-xl px-4 py-3 bg-secondary rounded-lg"
-            >
-              <i class="far fa-envelope-open"></i>
-            </a>
-            <div>
-              <h5 class="font-semibold text-gray-800">
-                <a href="mailto:support@fabinvest.in">Email</a>
-              </h5>
-              <p class="text-gray-600">support@fabinvest.in</p>
-            </div>
-          </div>
-
-          <!-- Phone -->
-          <div class="flex items-start gap-4">
-            <a href="tel:+919032039541" class="text-white text-xl px-4 py-3 bg-secondary rounded-lg">
-              <i class="fas fa-phone-alt"></i>
-            </a>
-            <div>
-              <h5 class="font-semibold text-gray-800">
-                <a href="tel:+919032039541">Contact</a>
-              </h5>
-              <p class="text-gray-600">+91 90320 39541</p>
-            </div>
-          </div>
-
-          <!-- WhatsApp -->
-          <div class="flex items-start gap-4">
-            <a
-              href="https://wa.me/919032039541"
-              target="_blank"
-              class="text-white text-2xl px-4 py-3 bg-secondary rounded-lg"
-            >
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <div>
-              <h5 class="font-semibold text-gray-800">
-                <a href="https://wa.me/919032039541" target="_blank"
-                  >Whatsapp</a
-                >
-              </h5>
-              <p class="text-gray-600">+91 90320 39541</p>
-            </div>
-          </div>
-
-          <!-- Hours -->
-          <div class="flex items-start gap-4">
-            <span class="text-white text-xl px-4 py-3 bg-secondary rounded-lg">
-              <i class="far fa-clock"></i>
-            </span>
-            <div>
-              <h5 class="font-semibold text-gray-800">Hours of Operation</h5>
-              <p class="text-gray-600">Monday - Friday: 10:00 - 17:00</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column (Maps) -->
-        <div class="space-y-10">
-          <!-- Hyderabad Office -->
-          <div>
-            <h6 class="text-lg font-semibold uppercase text-accent mb-2">
-              Hyderabad Office
-            </h6>
-            <iframe
-              class="w-full h-64 rounded"
-              loading="lazy"
-              src="https://maps.google.com/maps?q=dsr%20tranquil&t=m&z=15&output=embed&iwloc=near"
-              title="dsr tranquil"
-            ></iframe>
-          </div>
-
-          <!-- Bangalore Office -->
-          <div>
-            <h6 class="text-sm uppercase text-accent mb-2">
-              Bangalore Office
-            </h6>
-            <iframe
-              class="w-full h-64 rounded"
-              loading="lazy"
-              src="https://maps.google.com/maps?q=Salarpuria%20Symbiosis%2C%20Bannerghatta%20Rd%2C%20Arekere%20Village%2C%20Begur%20Hobli%2C%20Bengaluru%2C%20Karnataka%20560076&t=m&z=15&output=embed&iwloc=near"
-              title="Salarpuria Symbiosis"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-[#FAF9F7] py-20">
-      <div class="max-w-7xl mx-auto px-4 bg-black rounded-xl py-8 lg:px-16">
-        <div
-          class="flex flex-col-reverse md:flex-row items-center justify-between gap-10"
+    <section
+      class="relative bg-cover bg-center bg-no-repeat py-20 md:py-28 max-w-7xl mx-auto bg-black lg:rounded-xl mb-20"
+      style="background-image: url('./assets/background.png')"
+    >
+      <div class="absolute inset-0 bg-opacity-10"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <h1
+          class="text-white text-4xl md:text-5xl font-bold mb-4 animate-fadeInUp"
         >
-          <!-- Left Side Text -->
-          <div class="w-full md:w-1/2">
-            <h2 class="text-3xl font-bold text-white mb-4 animate-fade-in">
-              Get Notifications
-            </h2>
-            <p class="text-white mb-6">
-              Join our investor community for exclusive updates on new launches
-              and investment opportunities.
-            </p>
-            <a
-              href="https://chat.whatsapp.com/HP7dDuR2NLSKz9R83ccbEp"
-              target="_blank"
-              rel="noopener"
-              class="inline-block bg-accent hover:bg-secondary text-white font-medium px-6 py-3 rounded shadow-md transition transform hover:-translate-y-1"
-            >
-              Join Community
-            </a>
-          </div>
-
-          <!-- Right Side Image -->
-          <div class="">
-            <img
-              src="./assets/Asset 5.png"
-              alt="Fab Invest Logo"
-              class="max-w-xs md:max-w-sm w-full h-auto"
-            />
-          </div>
+          Terms Of Use
+        </h1>
+        <div
+          class="grid grid-cols-3 gap-2 max-w-[19rem] mx-auto mt-6 animate-fadeInDown"
+        >
+          <a href="/" class="text-accent hover:underline">Home</a>
+          <span class="text-white">&gt;</span>
+          <a href="terms-of-use.html" class="text-accent hover:underline">Terms Of Use</a>
         </div>
       </div>
     </section>
 
     <footer class="bg-[#111111] text-white py-12 md:py-20">
-      <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10"
+      >
         <!-- Logo & Contact -->
         <div class="text-center md:text-left">
           <img
@@ -274,19 +156,19 @@
           />
           <ul class="space-y-3 text-sm">
             <li class="flex items-center gap-2">
-              <i class="fas fa-phone-alt  text-accent"></i>
+              <i class="fas fa-phone-alt text-accent"></i>
               <a href="tel:+919032039541" class="hover:underline"
                 >+91 90320 39541</a
               >
             </li>
             <li class="flex items-center gap-2">
-              <i class="fab fa-whatsapp  text-accent"></i>
+              <i class="fab fa-whatsapp text-accent"></i>
               <a href="https://wa.me/919032039541" class="hover:underline"
                 >+91 90320 39541</a
               >
             </li>
             <li class="flex items-center gap-2">
-              <i class="fas fa-envelope  text-accent"></i>
+              <i class="fas fa-envelope text-accent"></i>
               <a href="mailto:support@fabinvest.in" class="hover:underline"
                 >support@fabinvest.in</a
               >
@@ -299,35 +181,27 @@
           <h5 class="font-semibold text-lg mb-4">Quick Links</h5>
           <ul class="space-y-2 text-sm">
             <li>
-              <a href="/"class="hover:underline">Home</a>
+              <a href="/" class="hover:underline">Home</a>
             </li>
             <li>
-              <a href="projects.html" class="hover:underline"
-                >Projects</a
-              >
+              <a href="projects.html" class="hover:underline">Projects</a>
             </li>
             <li>
-              <a href="faqs.html" class="hover:underline"
-                >Faqs</a
-              >
+              <a href="faqs.html" class="hover:underline">Faqs</a>
             </li>
             <li>
-              <a href="about-us.html" class="hover:underline"
-                >About</a
-              >
+              <a href="about-us.html" class="hover:underline">About</a>
             </li>
             <li>
-              <a href="contact-us.html" class="hover:underline"
-                >Contact</a
-              >
+              <a href="contact-us.html" class="hover:underline">Contact</a>
             </li>
             <!-- <li>
-              <a
-                href="https://fabinvest.in/our-investors/"
-                class="hover:underline"
-                >Our Investors</a
-              >
-            </li> -->
+                <a
+                  href="https://fabinvest.in/our-investors/"
+                  class="hover:underline"
+                  >Our Investors</a
+                >
+              </li> -->
           </ul>
         </div>
 
@@ -336,16 +210,12 @@
           <h5 class="font-semibold text-lg mb-4">Legal</h5>
           <ul class="space-y-2 text-sm">
             <li>
-              <a
-                href="privacy-policy.html"
-                class="hover:underline"
+              <a href="privacy-policy.html" class="hover:underline"
                 >Privacy Policy</a
               >
             </li>
             <li>
-              <a
-                href="terms-of-use.html"
-                class="hover:underline"
+              <a href="terms-of-use.html" class="hover:underline"
                 >Terms of Use</a
               >
             </li>
@@ -365,22 +235,13 @@
             Bengaluru, Karnataka 560101
           </p>
           <div class="flex gap-4">
-            <a
-              href="/"
-              target="_blank"
-              class="hover:text-yellow-500"
+            <a href="/" target="_blank" class="hover:text-yellow-500"
               ><i class="fab fa-facebook text-xl text-accent"></i
             ></a>
-            <a
-              href="/"
-              target="_blank"
-              class="hover:text-yellow-500"
+            <a href="/" target="_blank" class="hover:text-yellow-500"
               ><i class="fab fa-instagram text-xl text-accent"></i
             ></a>
-            <a
-              href="/"
-              target="_blank"
-              class="hover:text-yellow-500"
+            <a href="/" target="_blank" class="hover:text-yellow-500"
               ><i class="fab fa-linkedin text-xl text-accent"></i
             ></a>
           </div>
@@ -395,10 +256,5 @@
         </p>
       </div>
     </section>
-
-    <script
-    src="https://kit.fontawesome.com/ba76523eba.js"
-    crossorigin="anonymous"
-  ></script>
   </body>
 </html>

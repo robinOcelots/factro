@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fractor</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/Asset 5.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/Asset 5.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/Asset 5.png" />
+    <style>
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in {
+        animation: fade-in 0.8s ease-out forwards;
+        opacity: 0;
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#072149",
+              secondary: "#317cff",
+              accent: "#22b3ff",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans pt-32">
+    <header class="bg-white py-6 shadow-sm fixed top-0 left-0 right-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="flex-shrink-0">
+          <img src="./assets/Asset 3.png" alt="fabinvest" class="h-10 w-auto" />
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+          <!-- <a href="#" class="group transition duration-300">
+            Link
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+            </a> -->
+          <a
+            href="/"
+            class="text-lg text-primary hover:text-secondary font-normal group transition duration-300"
+            >Home
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="projects.html"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Projects
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="webinars.html"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Webinars
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="faqs.html"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Faqs
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="about-us.html"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >About Us
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+          <a
+            href="contact-us.html"
+            class="text-lg text-primary hover:text-accent font-normal group transition duration-300"
+            >Contact Us
+            <span
+              class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+            ></span
+          ></a>
+        </nav>
+
+        <!-- Mobile Menu Toggle (optional placeholder for real implementation) -->
+        <div class="md:hidden">
+          <button class="text-gray-700 focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative bg-cover bg-center bg-no-repeat py-20 md:py-28 max-w-7xl mx-auto bg-black lg:rounded-xl mb-20"
+      style="background-image: url('./assets/background.png')"
+    >
+      <div class="absolute inset-0 bg-opacity-10"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <h1
+          class="text-white text-4xl md:text-5xl font-bold mb-4 animate-fadeInUp"
+        >
+          FAQS
+        </h1>
+        <div
+          class="grid grid-cols-3 gap-2 max-w-[16rem] mx-auto mt-6 animate-fadeInDown"
+        >
+          <a href="/" class="text-accent hover:underline">Home</a>
+          <span class="text-white">&gt;</span>
+          <a href="faqs.html" class="text-accent hover:underline">FAQS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tailwind version of Fab Invest FAQ Section -->
+    <section class="bg-[#FAF9F7] py-8 relative z-40 ">
+      <div class="container mx-auto px-4 max-w-7xl mx-auto px-4 py-8 lg:px-16">
+        <div class="w-full">
+          <h6 class="text-base font-semibold text-blue-600">FAQs</h6>
+          <h2 class="text-3xl font-bold mt-2 mb-6 text-blue-900 animate-fadeIn">
+            Frequently asked questions
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Column Accordion -->
+            <div class="space-y-4 animate-fadeIn">
+              <details
+                open
+                class="border border-blue-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-blue-700 hover:text-blue-900"
+                >
+                  What is Fab Invest?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Fab Invest is a Real Estate Investment platform that
+                  facilitates small and mid-scale investors to micro invest in
+                  premier real estate projects and earn upto 18% Returns per
+                  annum from these Investments. Your Investment in the Project
+                  will be protected by a property surety worth at least 1.5
+                  times your investment value.
+                </p>
+              </details>
+              <details
+                class="border border-blue-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-blue-700 hover:text-blue-900"
+                >
+                  What is Base Investor Price?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Investors in real estate projects acquire shares at a deeply
+                  discounted rate (40-50% off market price). This is known as
+                  Base Investor Price and usually reflects the builder's cost
+                  without profit or overhead.
+                </p>
+              </details>
+              <details
+                class="border border-blue-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-blue-700 hover:text-blue-900"
+                >
+                  What is the minimum investment to start with?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  You can start investing on our platform with a minimum
+                  investment of ₹25 Lakhs.
+                </p>
+              </details>
+              <details
+                class="border border-blue-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-blue-700 hover:text-blue-900"
+                >
+                  What is the investment term?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Terms range from 12 to 36 months. Each opportunity has
+                  specific durations listed on its respective page.
+                </p>
+              </details>
+              <details
+                class="border border-blue-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-blue-700 hover:text-blue-900"
+                >
+                  How does the repayment work?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Repayments are scheduled per deal terms. Profits are paid
+                  every 6–12 months; principal is repaid at term end.
+                </p>
+              </details>
+              <details
+                class="border border-blue-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-blue-700 hover:text-blue-900"
+                >
+                  How does Fab Invest curate Investment Opportunities?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  With 15+ years of experience, we follow strict scrutiny. Less
+                  than 5% of projects reviewed pass our filters.
+                </p>
+              </details>
+              <details
+                class="border border-blue-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-blue-700 hover:text-blue-900"
+                >
+                  What are your Investment Principles?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  We only invest in RERA-approved, late-stage projects worth
+                  ₹100+ crores, offering 1.5x+ entry points.
+                </p>
+              </details>
+            </div>
+
+            <!-- Right Column Accordion -->
+            <div class="space-y-4 animate-fadeIn">
+              <details
+                open
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  Fractionalizing Real Estate Investments!!
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Instead of 1 investor with ₹5 Cr+, Fab Invest pools multiple
+                  investors to access builder-backed investments with 1.7x–2x
+                  surety.
+                </p>
+              </details>
+              <details
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  What is Fractional Ownership?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Multiple people own shares in a large property via a company.
+                  Each investor owns equity in the company holding the property.
+                </p>
+              </details>
+              <details
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  Is Investing riskier than Buying a Flat?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Investing is 2x safer due to discounted share price and legal
+                  ownership via registration, just like buying a property.
+                </p>
+              </details>
+              <details
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  How is the Investment process executed?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Each investment is via a dedicated LLP, and collateral is
+                  registered in the LLP’s name. Investors hold proportional
+                  shares.
+                </p>
+              </details>
+              <details
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  Can I withdraw my money before the term ends?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Early exits take 3-4 months minimum. Not advised for emergency
+                  funds. Returns reduce to 15% annually if exited early.
+                </p>
+              </details>
+              <details
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  How are multiple premature withdrawal requests processed?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Requests are honored on a first-come-first-serve basis using
+                  liquidity from collateral sales.
+                </p>
+              </details>
+              <details
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  What happens if the Developer defaults the payment?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  Fab Invest will liquidate the 1.5x–2x secured asset and
+                  distribute proceeds as per shareholding.
+                </p>
+              </details>
+              <details
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  What is the risk? Should I invest with Fab Invest?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  While there's risk, even in the worst case, you acquire
+                  property at ~40% below market. Know your risk appetite before
+                  investing.
+                </p>
+              </details>
+              <details
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  Does Fab Invest guarantee my money?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  No guarantees. We’re a facilitator. Do your due diligence and
+                  consult financial advisors before investing.
+                </p>
+              </details>
+              <details
+                class="border border-purple-100 rounded-lg p-4 transition-all duration-300 bg-white shadow hover:shadow-lg"
+              >
+                <summary
+                  class="font-semibold cursor-pointer text-purple-700 hover:text-purple-900"
+                >
+                  What if Fab Invest shuts down its operations?
+                </summary>
+                <p class="mt-2 text-sm text-gray-700">
+                  All agreements are between investors and developers. Assets
+                  and contracts remain enforceable regardless of our platform
+                  status.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FAF9F7] py-20">
+      <div class="max-w-7xl mx-auto px-4 bg-black rounded-xl py-8 lg:px-16">
+        <div
+          class="flex flex-col-reverse md:flex-row items-center justify-between gap-10"
+        >
+          <!-- Left Side Text -->
+          <div
+            class="w-full md:w-1/2 flex flex-col items-center justify-center md:items-start"
+          >
+            <h2 class="text-3xl font-bold text-white mb-4 animate-fade-in">
+              Get Notifications
+            </h2>
+            <p class="text-white mb-6 text-center md:text-left">
+              Join our investor community for exclusive updates on new launches
+              and investment opportunities.
+            </p>
+            <a
+              href="https://chat.whatsapp.com/HP7dDuR2NLSKz9R83ccbEp"
+              target="_blank"
+              rel="noopener"
+              class="inline-block bg-accent hover:bg-secondary text-white font-medium px-6 py-3 rounded shadow-md transition transform hover:-translate-y-1"
+            >
+              Join Community
+            </a>
+          </div>
+
+          <!-- Right Side Image -->
+          <div class="">
+            <img
+              src="./assets/Asset 5.png"
+              alt="Fab Invest Logo"
+              class="max-w-xs md:max-w-sm w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#111111] text-white py-12 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
+        <!-- Logo & Contact -->
+        <div class="text-center md:text-left">
+          <img
+            src="./assets/Asset 4.png"
+            alt="FabInvest Logo"
+            class="w-44 mb-6"
+          />
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2">
+              <i class="fas fa-phone-alt  text-accent"></i>
+              <a href="tel:+919032039541" class="hover:underline"
+                >+91 90320 39541</a
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fab fa-whatsapp  text-accent"></i>
+              <a href="https://wa.me/919032039541" class="hover:underline"
+                >+91 90320 39541</a
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fas fa-envelope  text-accent"></i>
+              <a href="mailto:support@fabinvest.in" class="hover:underline"
+                >support@fabinvest.in</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h5 class="font-semibold text-lg mb-4">Quick Links</h5>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="/"class="hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="projects.html" class="hover:underline"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="faqs.html" class="hover:underline"
+                >Faqs</a
+              >
+            </li>
+            <li>
+              <a href="about-us.html" class="hover:underline"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="contact-us.html" class="hover:underline"
+                >Contact</a
+              >
+            </li>
+            <!-- <li>
+              <a
+                href="https://fabinvest.in/our-investors/"
+                class="hover:underline"
+                >Our Investors</a
+              >
+            </li> -->
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h5 class="font-semibold text-lg mb-4">Legal</h5>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="privacy-policy.html"
+                class="hover:underline"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="terms-of-use.html"
+                class="hover:underline"
+                >Terms of Use</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Offices & Socials -->
+        <div>
+          <h5 class="font-semibold text-lg mb-4">Hyderabad Office</h5>
+          <p class="text-sm mb-4">
+            1st Floor, DSR Tranquil, Ayyappa Society Main Rd, Mega Hills,
+            Madhapur, Hyderabad, Telangana 500081
+          </p>
+          <h5 class="font-semibold text-lg mb-2">Bangalore Office</h5>
+          <p class="text-sm mb-4">
+            3rd Floor, WeWork, Salarpuria Symbiosis, Bannerghatta Rd, Arekere,
+            Bengaluru, Karnataka 560101
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="/"
+              target="_blank"
+              class="hover:text-yellow-500"
+              ><i class="fab fa-facebook text-xl text-accent"></i
+            ></a>
+            <a
+              href="/"
+              target="_blank"
+              class="hover:text-yellow-500"
+              ><i class="fab fa-instagram text-xl text-accent"></i
+            ></a>
+            <a
+              href="/"
+              target="_blank"
+              class="hover:text-yellow-500"
+              ><i class="fab fa-linkedin text-xl text-accent"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="bg-[#111111] text-white border-t border-white/10 py-4">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-sm">
+          © 2025 <span class="font-semibold">Fractro™</span>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </section>
+
+    <!-- Font Awesome for Rocket Icon -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
