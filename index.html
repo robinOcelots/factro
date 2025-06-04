@@ -18,6 +18,10 @@
       href="./assets/Asset 5.png"
     />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/Asset 5.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
@@ -41,14 +45,14 @@
     <header class="bg-white py-6 shadow-sm fixed top-0 left-0 right-0 z-50">
       <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <!-- Logo -->
-        <a href="index.html"  class="flex-shrink-0">
+        <a href="index.html" class="flex-shrink-0">
           <img src="./assets/Asset 3.png" alt="fabinvest" class="h-10 w-auto" />
         </a>
 
         <!-- Navigation Menu -->
         <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
           <a
-            href="index.html" 
+            href="index.html"
             class="text-lg text-primary hover:text-secondary font-normal group transition duration-300"
             >Home
             <span
@@ -99,8 +103,8 @@
 
         <!-- Mobile Menu Toggle -->
         <div class="md:hidden">
-          <button 
-            class="text-gray-700 focus:outline-none" 
+          <button
+            class="text-gray-700 focus:outline-none"
             onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
           >
             <svg
@@ -123,14 +127,39 @@
     </header>
 
     <!-- Mobile Menu Dropdown -->
-    <div id="mobileMenu" class="hidden md:hidden fixed top-[72px] left-0 right-0 bg-white shadow-lg z-40">
+    <div
+      id="mobileMenu"
+      class="hidden md:hidden fixed top-[72px] left-0 right-0 bg-white shadow-lg z-40"
+    >
       <nav class="flex flex-col py-4 px-4">
-        <a href="index.html"  class="py-3 text-primary hover:text-secondary border-b border-gray-100">Home</a>
-        <a href="projects.html" class="py-3 text-primary hover:text-accent border-b border-gray-100">Projects</a>
-        <a href="webinars.html" class="py-3 text-primary hover:text-accent border-b border-gray-100">Webinars</a>
-        <a href="faqs.html" class="py-3 text-primary hover:text-accent border-b border-gray-100">Faqs</a>
-        <a href="about-us.html" class="py-3 text-primary hover:text-accent border-b border-gray-100">About Us</a>
-        <a href="contact-us.html" class="py-3 text-primary hover:text-accent">Contact Us</a>
+        <a
+          href="index.html"
+          class="py-3 text-primary hover:text-secondary border-b border-gray-100"
+          >Home</a
+        >
+        <a
+          href="projects.html"
+          class="py-3 text-primary hover:text-accent border-b border-gray-100"
+          >Projects</a
+        >
+        <a
+          href="webinars.html"
+          class="py-3 text-primary hover:text-accent border-b border-gray-100"
+          >Webinars</a
+        >
+        <a
+          href="faqs.html"
+          class="py-3 text-primary hover:text-accent border-b border-gray-100"
+          >Faqs</a
+        >
+        <a
+          href="about-us.html"
+          class="py-3 text-primary hover:text-accent border-b border-gray-100"
+          >About Us</a
+        >
+        <a href="contact-us.html" class="py-3 text-primary hover:text-accent"
+          >Contact Us</a
+        >
       </nav>
     </div>
 
@@ -141,8 +170,12 @@
     >
       <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
-      <div class="relative z-10 flex items-center justify-center min-h-screen px-4 py-20 md:py-0">
-        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0">
+      <div
+        class="relative z-10 flex items-center justify-center min-h-screen px-4 py-20 md:py-0"
+      >
+        <div
+          class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0"
+        >
           <div class="w-full md:w-[70%] text-center">
             <h1 class="text-3xl md:text-7xl font-bold leading-tight">
               Micro Invest In <br />
@@ -175,7 +208,7 @@
       <div class="max-w-7xl mx-auto px-4">
         <!-- Headings -->
         <div class="text-center mb-10">
-          <h6 class="text-lg font-bold text-secondary uppercase">
+          <h6 class="text-lg font-bold text-secondary uppercase animate__animated animate__backInDown">
             100% Asset BACKED
           </h6>
           <h2 class="text-3xl md:text-4xl font-bold mt-2 text-black">
@@ -190,7 +223,8 @@
         <!-- Feature Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Feature 1 -->
-          <div  class="Feature text-center space-y-4 bg-primary rounded-lg p-4 py-20 hover:shadow-lg transition-all duration-300"
+          <div
+            class="Feature text-center space-y-4 bg-primary rounded-lg p-4 py-20 hover:shadow-lg transition-all duration-300"
           >
             <img
               src="./assets/icons/Icon4.png"
@@ -205,7 +239,8 @@
           </div>
 
           <!-- Feature 2 -->
-          <div class="Feature text-center space-y-4 rounded-lg p-4 py-20 border border-accent hover:border-secondary hover:shadow-lg transition-all duration-300"
+          <div
+            class="Feature text-center space-y-4 rounded-lg p-4 py-20 border border-accent hover:border-secondary hover:shadow-lg transition-all duration-300"
           >
             <img
               src="./assets/icons/Icon1.png"
@@ -219,7 +254,8 @@
           </div>
 
           <!-- Feature 3 -->
-          <div class="Feature text-center space-y-4 rounded-lg p-4 py-20 border border-accent hover:border-secondary hover:shadow-lg transition-all duration-300"
+          <div
+            class="Feature text-center space-y-4 rounded-lg p-4 py-20 border border-accent hover:border-secondary hover:shadow-lg transition-all duration-300"
           >
             <img
               src="./assets/icons/Icon3.png"
@@ -290,7 +326,7 @@
       </div>
     </section>
 
-    <section class="py-24 bg-gradient-to-b from-[#FAF9F7] to-accent">
+    <section class="py-24 bg-gradient-to-b from-white to-accent ">
       <div class="max-w-7xl mx-auto px-4 text-center">
         <!-- Section Headings -->
         <h6 class="text-lg font-bold text-secondary uppercase">
@@ -432,7 +468,7 @@
                       </div>
                     </a>
                   </div>
-                    <!-- <div class="p-4">
+                  <!-- <div class="p-4">
                       <h3 class="text-lg font-semibold text-gray-800">
                         Rama Krishna Potluri
                       </h3>
@@ -538,13 +574,19 @@
             </div>
 
             <!-- Navigation -->
-            <div class="absolute top-1/2 -left-2 md:-left-12 transform -translate-y-1/2 z-10">
-              <button class="swiper-button-prev w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-primary hover:text-secondary">
-              </button>
+            <div
+              class="absolute top-1/2 -left-2 md:-left-12 transform -translate-y-1/2 z-10"
+            >
+              <button
+                class="swiper-button-prev w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-primary hover:text-secondary"
+              ></button>
             </div>
-            <div class="absolute top-1/2 -right-2 md:-right-12 transform -translate-y-1/2 z-10">
-              <button class="swiper-button-next w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-primary hover:text-secondary">
-              </button>
+            <div
+              class="absolute top-1/2 -right-2 md:-right-12 transform -translate-y-1/2 z-10"
+            >
+              <button
+                class="swiper-button-next w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-primary hover:text-secondary"
+              ></button>
             </div>
 
             <!-- Pagination -->
@@ -670,7 +712,7 @@
             <div class="aspect-video mb-4">
               <iframe
                 class="w-full h-full rounded-md"
-                src="https://www.youtube.com/embed/yO_qAa3jmVs?rel=0"
+                src="https://www.youtube.com/embed/ENFt2Q6g58k?si=gFOsB7FOQgw9Pha9"
                 title="Project Video"
                 frameborder="0"
                 allow="autoplay; encrypted-media"
@@ -681,7 +723,7 @@
               Prime North Meadows
             </h3>
             <p class="flex items-center gap-2 text-gray-600 mb-6">
-              <i class="fas fa-location-arrow text-yellow-500"></i> Mokila,
+              <i class="fas fa-location-arrow text-accent"></i> Mokila,
               Hyderabad
             </p>
 
@@ -718,7 +760,7 @@
             <!-- CTA Button -->
             <div class="text-left">
               <a
-                href="https://fabinvest.in/sark-t2"
+                href="index.html"
                 class="inline-block bg-accent hover:bg-secondary text-white px-6 py-2 rounded-full font-medium transition"
                 >View Project</a
               >
@@ -752,15 +794,15 @@
           <!-- SVB Elegancia -->
           <div>
             <img
-              src="https://fabinvest.in/wp-content/uploads/2024/04/SVB-Project-Cover-Image-768x429.jpg"
+              src="./assets/images/b43544FDyB3a9s8HB9x7uyU97U.avif"
               alt="SVB Elegancia"
-              class="w-full h-auto rounded-md mb-4"
+              class="w-full h-64 rounded-md mb-4"
             />
             <h3 class="text-xl font-semibold text-gray-800 mb-2">
               SVB Elegancia
             </h3>
             <p class="flex items-center gap-2 text-gray-600 mb-4">
-              <i class="fas fa-location-arrow text-yellow-500"></i> Kompally,
+              <i class="fas fa-location-arrow text-accent"></i> Kompally,
               Hyderabad
             </p>
             <div class="mb-2 font-semibold text-gray-700">₹ 15 Crores</div>
@@ -779,15 +821,15 @@
           <!-- Sark Villas -->
           <div>
             <img
-              src="https://fabinvest.in/wp-content/uploads/2024/03/Sark-Cover-e1710321696474-768x421.jpg"
+              src="./assets/images/ESf6LZtzRjBruhBNbEUeUZwno.avif"
               alt="Sark Villas"
-              class="w-full h-auto rounded-md mb-4"
+              class="w-full h-64 rounded-md mb-4"
             />
             <h3 class="text-xl font-semibold text-gray-800 mb-2">
               Sark Villas
             </h3>
             <p class="flex items-center gap-2 text-gray-600 mb-4">
-              <i class="fas fa-location-arrow text-yellow-500"></i> Mokila,
+              <i class="fas fa-location-arrow text-accent"></i> Mokila,
               Hyderabad
             </p>
             <div class="mb-2 font-semibold text-gray-700">₹ 16 Crores</div>
@@ -806,15 +848,15 @@
           <!-- Soulace Villas -->
           <div>
             <img
-              src="https://fabinvest.in/wp-content/uploads/2024/09/Soulace-Cover-Image--768x427.jpg"
+              src="./assets/images/JnHCBqvZapvYzQnsjBQ8t9Njhps.webp"
               alt="Soulace Villas"
-              class="w-full h-auto rounded-md mb-4"
+              class="w-full h-64 rounded-md mb-4"
             />
             <h3 class="text-xl font-semibold text-gray-800 mb-2">
               Soulace Villas
             </h3>
             <p class="flex items-center gap-2 text-gray-600 mb-4">
-              <i class="fas fa-location-arrow text-yellow-500"></i> Sarjapur
+              <i class="fas fa-location-arrow text-accent"></i> Sarjapur
               Road, Bangalore
             </p>
             <div class="mb-2 font-semibold text-gray-700">₹ 12 Crores</div>
@@ -927,7 +969,9 @@
           class="flex flex-col-reverse md:flex-row items-center justify-between gap-10"
         >
           <!-- Left Side Text -->
-          <div class="w-full md:w-1/2 flex flex-col items-center justify-center md:items-start">
+          <div
+            class="w-full md:w-1/2 flex flex-col items-center justify-center md:items-start"
+          >
             <h2 class="text-3xl font-bold text-white mb-4 animate-fade-in">
               Get Notifications
             </h2>
@@ -958,7 +1002,9 @@
     </section>
 
     <footer class="bg-[#111111] text-white py-12 md:py-20">
-      <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10"
+      >
         <!-- Logo & Contact -->
         <div class="text-center md:text-left">
           <img
@@ -968,19 +1014,19 @@
           />
           <ul class="space-y-3 text-sm">
             <li class="flex items-center gap-2">
-              <i class="fas fa-phone-alt  text-accent"></i>
+              <i class="fas fa-phone-alt text-accent"></i>
               <a href="tel:+919032039541" class="hover:underline"
                 >+91 90320 39541</a
               >
             </li>
             <li class="flex items-center gap-2">
-              <i class="fab fa-whatsapp  text-accent"></i>
+              <i class="fab fa-whatsapp text-accent"></i>
               <a href="https://wa.me/919032039541" class="hover:underline"
                 >+91 90320 39541</a
               >
             </li>
             <li class="flex items-center gap-2">
-              <i class="fas fa-envelope  text-accent"></i>
+              <i class="fas fa-envelope text-accent"></i>
               <a href="mailto:support@fractro.in" class="hover:underline"
                 >support@fractro.in</a
               >
@@ -996,24 +1042,16 @@
               <a href="index.html" class="hover:underline">Home</a>
             </li>
             <li>
-              <a href="projects.html" class="hover:underline"
-                >Projects</a
-              >
+              <a href="projects.html" class="hover:underline">Projects</a>
             </li>
             <li>
-              <a href="faqs.html" class="hover:underline"
-                >Faqs</a
-              >
+              <a href="faqs.html" class="hover:underline">Faqs</a>
             </li>
             <li>
-              <a href="about-us.html" class="hover:underline"
-                >About</a
-              >
+              <a href="about-us.html" class="hover:underline">About</a>
             </li>
             <li>
-              <a href="contact-us.html" class="hover:underline"
-                >Contact</a
-              >
+              <a href="contact-us.html" class="hover:underline">Contact</a>
             </li>
             <!-- <li>
               <a
@@ -1030,16 +1068,12 @@
           <h5 class="font-semibold text-lg mb-4">Legal</h5>
           <ul class="space-y-2 text-sm">
             <li>
-              <a
-                href="privacy-policy.html"
-                class="hover:underline"
+              <a href="privacy-policy.html" class="hover:underline"
                 >Privacy Policy</a
               >
             </li>
             <li>
-              <a
-                href="terms-of-use.html"
-                class="hover:underline"
+              <a href="terms-of-use.html" class="hover:underline"
                 >Terms of Use</a
               >
             </li>
@@ -1059,22 +1093,13 @@
             Bengaluru, Karnataka 560101
           </p>
           <div class="flex gap-4">
-            <a
-              href="index.html" 
-              target="_blank"
-              class="hover:text-yellow-500"
+            <a href="index.html" target="_blank" class="hover:text-accent"
               ><i class="fab fa-facebook text-xl text-accent"></i
             ></a>
-            <a
-              href="index.html" 
-              target="_blank"
-              class="hover:text-yellow-500"
+            <a href="index.html" target="_blank" class="hover:text-accent"
               ><i class="fab fa-instagram text-xl text-accent"></i
             ></a>
-            <a
-              href="index.html" 
-              target="_blank"
-              class="hover:text-yellow-500"
+            <a href="index.html" target="_blank" class="hover:text-accent"
               ><i class="fab fa-linkedin text-xl text-accent"></i
             ></a>
           </div>
